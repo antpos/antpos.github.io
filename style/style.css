@@ -32,9 +32,19 @@ article{
 	overflow: hidden;
 	left-margin: 240px;
 	padding-left: 100px;
+	padding-right: 100px;
 	border-left: 1px solid white;
 }
 
 a{
 	color: #4D4DFF;
+}
+
+#headerlink{
+	color: grey;
+}
+
+.code{
+	font-family: lucida;
+	padding-left: 30px;
 }
