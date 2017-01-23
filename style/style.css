@@ -45,7 +45,11 @@ a{
 }
 
 .code{
-	font-family: lucida;
+	font-family: monospace;
 	color: white;
 	padding-left: 30px;
+}
+
+.linkList{
+	list-style-position: outside;
 }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>VIM notes</title>
+		<meta charset="utf-8">
+		<link href="../style/style.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<a id="headerlink" href="../index.html"><h1>Uncompetent [sic] engineer</h1></a>
+				<h1>1001 unfinished projects</h1>
+				<h2>VIM</h2>
+
+			</header>
+
+			<nav>
+				<a href="../index.html">First page</a>				
+				<p>References</p>
+				<ul class="linkList">
+					<li><a href="https://neovim.io/">neovim</a></li>
+					<li><a href="http://www.vim.org/">VIM</a></li>
+				</ul>
+			</nav>
+
+			<article>
+				<h1>VIM</h1>
+				<p>My cheat sheet for VIM</p>
+				<h1>Search and replace</h1>
+				<p>
+					Remove highlights after the search:
+					<p class="code">:noh<p>
+				</p>
+				<p>
+					The search and replace was not that simple for me when I first started using vim.
+					Even the vims help did not help me. 
+					Then I learned that the command is substitute and it works like <a href="https://www.gnu.org/software/sed/manual/sed.htm">sed</a> in linux. 
+				</p>
+				<p class="code">
+					:[range]s/{pattern}/{substitute}/[flags]
+				<p>
+				<p>
+					Basically substitute search pattern and replace it with substitute.
+					:s :su and :substitute all works.
+					<br>Replace all or range occurences in file:
+				</p>
+				<p class="code">
+					:%s/{pattern}/{substitute}/g
+					<br>:(#line),(#line)s/{pattern}/{substitute}/g
+				</p>
+			</article>
+
+			<footer>
+				<p>Nothing in this little footer</p>
+			</footer>
+		</div>
+
+	</body>
+</html>
