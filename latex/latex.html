@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LaTeX notes</title>
+		<meta charset="utf-8"/>
+		<link href="../style/style.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<div class="container">
+		<header>
+			<a id="headerlink" href="../index.html"><h1>Uncompetent [sic] engineer</h1></a>
+				<h1>1001 unfinished projects</h1>
+				<h2>LaTeX notes</h2>
+		</header>
+
+		<nav>
+			<a href="../index.html">First page</a>
+					<p>References</p>
+			<ul>
+				<li><a href="http://ctan.org/">CTAN</li>
+				<li><a href="https://eno.wikibooks.org/wiki/LaTeX">Wiki books</a>
+					<li><a href="http://tex.stackexchange.com/">StackExchange</a></li>
+			</ul>
+		</nav>
+
+		<article>
+			<h1>LaTeX notes</h1>
+			<p>After I found the LaTeX and after few stumbles. 
+			I found there is no return back to WYSIWYGs. 
+			Not for me at least. 
+			Below are my notes for LaTeX use.
+			Like everything in this site, I write them for me. 
+			Although I still hope that others find them useful.</p>
+
+			<h2>Engines</h2>
+			<p> There are few different tex engines. 
+			The engines are executables that reads the .tex files and outputs printable files, such as dvi or pdf.
+			Different engines use bit different syntax.
+			I use pdflatex for my documents. 
+			This means my notes works also with latex.
+			As one can expect from the names, difference is in output files.
+
+			</p>
+
+			<h1>Preamble</h1>
+
+			<h2>\documentclass[options]{class}</h2>
+			<p> 
+			The documentclass tag is the first tag used for the document. 
+			It defines what kind of document is to be created, mainly the format.
+			Normally when I start writing, I seldom use any other options than in table below. 
+			</p>
+
+			<!--Options table -->
+			<table>
+			<tr>
+				<th colspan="2">Typical options </th>
+			</tr>
+			<tr>
+				<td id="wide">fontsize	</td>
+				<td>default 10pt</td>
+			</tr>
+			<tr>
+				<td id="wide">paper size	</td>
+				<td>default letterpaper. Other options a4paper, a5paper, executivepaper, legalpaper</td>
+			</tr>
+			<tr>
+				<td id="wide"> fleqn</td>
+				<td>Left aligned formulas instead of centered </td>
+			</tr>
+			<tr>
+				<td id="wide">sides</td>
+				<td> oneside, twoside. By default the book class has twosided and report and article classes onesided. 
+			</tr>
+			</table>
+
+			<p> The classes define the format of the document.
+			The class must always be defined in the document.
+			The document type cna be changed easily, without any need to touch the text.
+			</p>
+
+			<!-- Class table -->
+			<table>
+			<tr>
+				<th colspan="2">Typical classes</th>
+			</tr>
+			<tr>
+				<td id="wide"> article </td>
+				<td> For short articles, short reports etc. </td>
+			</tr>
+			<tr>
+				<td id="wide"> book </td>
+				<td> For the books. </td> 
+			</tr>
+			<tr>
+				<td id="wide"> report </td>
+				<td> For the reports </td>
+			</tr>
+			</table>
+
+			<h2>UTF-8</h2>
+			<p>
+			To set LaTeX to be able use scandic fonts simply add:<br>
+			</p>
+			<p class="code">
+			\usepackage[T1]{fontenc} <br>\usepackage[utf8]{inputenc}
+			</p>
+			
+			<h1>The article </h1>
+			<h2>\begin{document} ... \end{document}</h2>
+			<p>
+			The article goes between these tags.
+			Should be written as they are in header.
+			</p>
+
+			<h2>\include{filename}</h2>
+			<p>
+			Not everything has to be written in one document. 
+			The file names don't have to have .tex added.
+			Also everything is not need to be in same folder. 
+			For filename use:
+			</p>
+			<p class="code">path/filename</p>
+
+
+		</article>
+
+		<footer>
+			<p>Nothing here either</p>
+		</footer>
+			
+	</div>
+
+
+</html>
